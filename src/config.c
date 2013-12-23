@@ -289,8 +289,8 @@ static void resetConf(void)
     cfg.gps_yaw                   = 30;         // Thats the MAG P during GPS functions, substitute for "cfg.P8[PIDMAG]"
     cfg.nav_rtl_lastturn          = 1;          // 1 = when copter gets to home position it rotates it's head to takeoff direction independend of nav_controls_heading
     cfg.nav_tail_first            = 0;          // 1 = Copter comes back with ass first (only works with nav_controls_heading = 1)
-    cfg.nav_controls_heading      = 0;          // 1 = Nav controls YAW during WP ONLY
-//  cfg.nav_controls_heading      = 1;          // 1 = Nav controls YAW during WP ONLY
+//  cfg.nav_controls_heading      = 0;          // 1 = Nav controls YAW during WP ONLY
+    cfg.nav_controls_heading      = 1;          // 1 = Nav controls YAW during WP ONLY
     cfg.nav_speed_min             = 150;        // 10 - 200 cm/s don't set higher than nav_speed_max! That dumbness is not covered.
     cfg.nav_speed_max             = 350;        // 50 - 2000 cm/s don't set lower than nav_speed_min! That dumbness is not covered.
     cfg.nav_approachdiv           = 3;          // 2 - 10 This is the divisor for approach speed for wp_distance. Example: 400cm / 3 = 133cm/s if below nav_speed_min it will be adjusted
